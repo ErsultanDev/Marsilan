@@ -1,0 +1,113 @@
+// main: ..//style.less
+
+.b2 {
+    padding: 90px 0;
+
+    .b2_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            letter-spacing: 1px;
+
+            &::after {
+                content: "";
+                border-bottom: 6px solid #0086D1;
+                width: 207px;
+                display: block;
+                margin-top: 30px;
+            }
+        }
+
+        .b2_start {
+            width: 600px;
+        }
+
+        .b2_list {
+            .b2_item {
+                display: flex;
+                margin-bottom: 22px;
+                align-items: center;
+
+                p {
+                    margin-left: 10px;
+                    font-size: 20px;
+                    font-style: italic;
+                }
+
+            }
+        }
+
+        .b2_end {
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1024px) {
+    .b2 {
+        .b2_wrapper {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width:966px) {
+    .b2 {
+        .b2_wrapper {
+            padding: 0;
+            flex-direction: column;
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        padding: 60px 0;
+        background-image: none;
+
+        .b2_wrapper {
+            width: 300px;
+            text-align: center;
+
+            h2 {
+                font-size: 19px;
+
+                &::after {
+                    margin: 30px auto;
+                }
+            }
+
+            .b2_start {
+                width: auto;
+                margin-bottom: 30px;
+            }
+
+            .b2_end {
+                width: auto;
+            }
+
+            .b2_list {
+                .b2_item {
+                    flex-direction: column;
+
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

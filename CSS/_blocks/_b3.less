@@ -1,0 +1,131 @@
+//main: ..//style.less
+.b3 {
+    padding: 90px 0;
+    background: #0086D1;
+    color: #fff;
+
+    .b3_desc {
+        text-align: center;
+        text-transform: uppercase;
+
+        h2 {
+            margin-bottom: 80px;
+            font-size: 27px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+
+    .b3_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 80px 0 0 0;
+
+        .b3_item {
+            text-align: center;
+            width: 270px;
+
+            h3 {
+                margin: 30px 0 0 0;
+                text-transform: uppercase;
+                font-size: 15px;
+
+            }
+        }
+
+        .b3_inner {
+            margin: 0px auto 70px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+    }
+
+    .b3_bottom {
+        width: 600px;
+        margin: 0 auto;
+
+        .b3_bottom_inner {
+            margin: 60px auto auto auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            p {
+                font-weight: 700;
+                margin: 0 10px;
+                font-size: 20px;
+            }
+
+            span {
+                font-weight: 900;
+                font-size: 70px;
+            }
+        }
+
+
+    }
+
+}
+
+@media (max-width:1024px) {
+    .b3 {
+        .b3_desc {
+            margin: 0 auto;
+
+            &::before {
+                margin: 0 auto 30px auto;
+            }
+        }
+
+        .b3_wrapper {
+            flex-direction: column;
+            width: 300px;
+            margin: 30px auto;
+
+            .b3_inner {
+                flex-direction: column;
+            }
+
+            .b3_item {
+                margin: 0 auto 40px auto;
+            }
+
+        }
+
+        .b3_bottom {
+            margin-top: 30px;
+            width: auto;
+            padding: 0 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:425px) {
+    .b3 {
+        .b3_desc {
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .b3_wrapper {
+            .b3_inner {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

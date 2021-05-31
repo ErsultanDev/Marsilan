@@ -1,0 +1,125 @@
+//main: ..//style.less
+
+.b6 {
+    padding: 90px 0;
+
+    .b6_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+
+            &::after {
+                content: "";
+                border-bottom: 6px solid #0086D1;
+                width: 207px;
+                display: block;
+                margin-top: 30px;
+            }
+        }
+
+        h4 {
+            margin-top: 70px;
+            font-weight: 300;
+            font-size: 18px;
+        }
+        h3{
+            margin-top: 60px;
+            color: #FF5468;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .b6_start {
+            width: 600px;
+        }
+
+        .b6_list {
+            .b6_item {
+                display: flex;
+                margin-bottom: 22px;
+                align-items: center;
+
+                p {
+                    margin-left: 10px;
+                    font-size: 20px;
+                    font-style: italic;
+                    color: #0086D1;
+                }
+
+            }
+        }
+
+
+        .b6_end {
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1024px) {
+    .b6 {
+        .b6_wrapper {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width:966px) {
+    .b6 {
+        .b6_wrapper {
+            padding: 0;
+            flex-direction: column;
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b6 {
+        padding: 60px 0;
+        background-image: none;
+
+        .b6_wrapper {
+            width: 300px;
+            text-align: center;
+
+            h2 {
+                font-size: 19px;
+                &:after{
+                    margin: 30px auto;
+                }
+            }
+
+            .b6_start {
+                width: auto;
+                margin-bottom: 30px;
+            }
+
+            .b6_end {
+                width: auto;
+            }
+
+            .b6_list {
+                .b6_item {
+                    flex-direction: column;
+
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
